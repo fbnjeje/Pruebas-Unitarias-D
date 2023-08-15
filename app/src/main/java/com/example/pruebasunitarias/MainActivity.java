@@ -53,14 +53,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    int numeroEntero = Integer.parseInt(mNumero1.getText().toString());
-                    int numeroEntero1 = Integer.parseInt(mNumero2.getText().toString());
-                    //String textoIngresado = mNumero1.getText().toString();
-//                    String textoIngresado2 = mNumero2.getText().toString();
-//                    instancia.rests(textoIngresado,textoIngresado2);
-                    int res = numeroEntero1 - numeroEntero;
+                    //int nuntero = Integer.parseInt(mNumero1.getText().toString());
+                    //int numeroEntero1 = Integer.parseInt(mmeroENumero2.getText().toString());
+                    String textoIngresado = mNumero1.getText().toString();
+                    String textoIngresado2 = mNumero2.getText().toString();
 
-                    mResultado.setText(String.valueOf(res));
+                    //int res = numeroEntero1 - numeroEntero;
+
+                    mResultado.setText(String.valueOf(instancia.rests(textoIngresado,textoIngresado2)));
                 } catch (NumberFormatException e) {
                     // Manejo de excepción si los valores ingresados no son números válidos
                     e.printStackTrace();
